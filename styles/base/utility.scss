@@ -1,0 +1,60 @@
+.bg-gray-light {
+    background-color: #f0f3f8;
+}
+
+.bg-gray {
+    background-color: #f9fafc;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.jc-flex-end {
+   justify-content: flex-end; 
+}
+
+.jc-space-between {
+    justify-content: space-between;
+}
+
+.a-flex-center {
+    align-items: center;
+}
+
+.add-pad-min-left {
+    padding-left: 1.9rem;
+}
+
+.arrow-down {
+    line-height: 0;
+
+    &:after, &:before {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 1px;
+        background-color: $gray-color;
+    }
+
+    &:after {
+        transform-origin: center left;
+        transform: rotate(-45deg);
+    }
+
+    &:before {
+        transform-origin: center right;
+        transform: rotate(45deg);
+    }
+}
+
+.arrow-top {
+    margin-top: 3px;
+    transform: rotate(-180deg);
+}
+
+@include mobile {
+    .add-pad-min-left {
+        padding-left: 0;
+    }
+}

@@ -1,0 +1,138 @@
+.gallery-container {
+    display: flex;
+    justify-content: space-between;
+    max-height: 390px;
+    margin-top: 27px;
+}
+
+.gallery-main {
+    width: 560px;
+    margin-right: 22px;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+}
+
+.gallery-title {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-family: "Epilogue", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: right;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px rgba(#000, 0.3);
+    color: #ffffff;
+
+  .swiper-slide-active & {
+    animation: slide-in 0.3s ease-in both;
+  }
+}
+
+.swiper-wrapper {
+    box-sizing: border-box;
+}
+
+.secondary-slider {
+    position: relative;
+    background-color: #f5f8fa;
+    padding: 40px 10px;
+    width: 75px;
+
+    .swiper-button {
+        &-prev,
+        &-next {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0) rotate(90deg);
+            color: #0f0f0f;
+
+            &::after {
+                font-size: 1.3rem;
+            }
+        }
+
+        &-prev,
+        &-next {
+            z-index: 2;
+        }
+
+        &-prev {
+            top: 20px;
+            bottom: auto;
+        }
+
+        &-next {
+            top: auto;
+            bottom: -5px;
+        }
+    }
+}
+
+.gallery-thumbs {
+    height: 100%;
+
+    .swiper-slide {
+        img {
+            transition: 0.3s;
+            line-height: 0;
+            height: 100%;
+        }
+
+        &-thumb-active {
+            border: 1px solid #1486cc;
+        }
+    }
+}
+
+@include laptop {
+    .gallery-container {
+        width: 100%;
+    }
+}
+
+@include mobile {
+    .gallery {
+        &-main {
+            width: 100%;
+        }
+
+        &-container {
+            display: block;
+            max-height: none;
+        }
+    }
+
+    .secondary-slider {
+        width: 100%;
+        padding: 10px 30px;
+        margin-top: 10px;
+
+        .swiper {
+        &-slide {
+            line-height: 0;
+        }
+
+        &-button {
+            &-prev,
+            &-next {
+                top: 84%;
+                transform: translateY(-50%);
+            }
+
+            &-prev {
+                left: 0;
+            }
+
+            &-next {
+                right: 0;
+                left: auto;
+                bottom: auto;
+            }
+        }
+        }
+    }
+}

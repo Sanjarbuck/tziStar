@@ -1,0 +1,81 @@
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.main {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.sidebar {
+    &-box {
+        width: 210px;
+        margin-top: 14px;
+        margin-left: 38px;
+    }
+
+    &-btn {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        transition: background-color 0.2s ease-in;
+        &:hover {
+            background-color: rgba(194, 53, 100, 0.05);
+            border-color: rgba(194, 53, 100, 0.1);
+        }
+    }
+
+    &-col {
+        margin-top: 28px;
+    }
+
+    &-toggle {
+        font-size: 1.8rem;
+        span {
+            margin-left: 15px;
+        }
+    }
+
+    &-list {
+        font-size: 1.4rem;
+        display: none;
+
+        li {
+            margin-top: 19px;
+        }
+    }
+
+    &-show {
+        .sidebar-list {
+            display: block;
+        }
+
+        .arrow-down {
+            margin-top: 3px;
+            transform: rotate(-180deg);
+        }
+    }
+}
+
+@include laptop {
+    .main {
+        flex-direction: column;
+    }
+    .sidebar {
+        &-box {
+            order: -1;
+            margin-left: 15px;
+        }
+    }
+}
+
+@include mobile {
+    .sidebar {
+        &-box {
+            margin-left: 0;
+        }
+    }
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./style.ff1c4cab.css">
+<script src="/style.ff1c4cab.js"></script></head>
+<body>
+    <header class="header">
+        <div class="bg-gray-light">
+            <div class="container header-top d-flex jc-flex-end a-flex-center">
+                <div class="phone-cell">
+                    <button id="phone-cell-btn" class="js-toggle" data-body-class="phone-cell--active">Заказать звонок</button>
+                </div>
+                <button class="btn-user btn-icon" aria-label="Go to user">
+                    <svg aria-hidden="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+                        <image data-name="Vector Smart Object" width="24" height="24" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACY0lEQVRIiZ3WSagVVxAG4M+nouJCEMQBnCKIswi6SpwWAV1koRCNCsbVI3HYmThl4fJFHzgsdOvKOBMxiAQRnIJGMIkkGNEIThgQFAkiDhipUA03TZ/rwx/u4tap/v9z6lT/1b06Ozu1wQdYgbmYiUGZ+gjX8SMO4WaJoqMQH4vDuISh2IVp6I++mIVuDMNPOIpxPRVYisv4GaOxFidwFy/wGncytg6jMvciPq+T9an934hV+LB27H5YgAkpcha/5NpzfIvvU3Q4upoEVuYOZmeNK8zAcYxsib3BXuzAXxm7kRuLk/yNfa0lippvw6Iaee+8i1by6rk1OIeBLfF49hNsr+6kEtiWu/mzRjSldHmJEZhXi93IBuiuBIJgDnY3ENR33oQhDbHg+gjjQ2BJluF5Q+LTHgg8bogF14F4h0LgY5wqPFwvWRN+L8SDc34ITMdvhaR+PRD4pxAPzskhMDjbqgljeiAwvhB/GNxVF70pJMUbeqUN+YXMacJ/3B15kcMLSS+xvo3AFrwqrIVPPQmBX9PISjif3lTH1TxBCXG3f4TA6fSZEv7Fzoa1PW1KG1iIkyGwH59hQJvk/g2xduTB9SmOhcDt9PTVheRo1cUN8SVtNhU2fiZso+qir7Ch1nJhYl/gWhpYHVHWW/iyZnhh6V9jsxazu5nBHzAVW3E/LbnU59Ls4i4e5AyYnBzrszL/mwf7srWutSEsYVBWIH6bqlmgYWR25ZB/9h4iYRnLW6dZk0AgumpiumG06LsQOQfzXfqunlyfyRXuYRm+yROF405K3wqEd4XTxmfLkeJnC94CKMJ+NwOY6YUAAAAASUVORK5CYII="></image>
+                    </svg>
+                    <span class="arrow-down"></span>
+                </button>
+                <a class="btn-shop btn-icon" href="#" aria-label="Go to basket">
+                    <svg aria-hidden="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="23" viewBox="0 0 25 23">
+                        <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="25" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAXCAYAAAD+4+QTAAABm0lEQVRIibXUT4hNYRjH8Q+jsKEpippEduxYGJMFxsLCRoywsnFXFiZqShZ2lIWNmAULFpSyI6VhMSP/SsRCFBZSRonFLFgweuq5dTtz7p3r3nN/der0vO97vuf3Pn8W1Go1FWslvjV+cmHVBOzAa/TXn0U9gOzCBH7WA71wMowHjYGqIWuxBpO9hISLZ5hpDEZOLmNpRZCteF4MBmQF1uFOBZCDOF4GuYnzONMlYACnMVVciJzcTTdbuoQMZX/MFBcC8hu3cahLyCCeli3Uqyuu7AD6uoBE0h+3gjzM9+0dApZgM560gvzBLRzuELIJP/ChFSR0A/uwuAPIUDMXsoTrik79jrGskv/RHtxrBzKLC9iPnR24mWgHErqIVyXxdvSiXcjy7Jn+7J8v+NUCsAyrs/TP5tSYnQ8S1/UOp3IO7c7K+VsCiLH+FqP4iKv4jCvFjcVRvw3n8AgnsR6rmriIvgjIOO7jep6foyIk8nE0//IEvmK6CeQNNmRlbcTePD8vJMZ05OUTjmAkG7VM73EM1/Ay59alORvxD2nDScmoATE0AAAAAElFTkSuQmCC"></image>
+                    </svg>
+                    <span class="shop-count">0</span>
+                </a>
+            </div>
+        </div>
+        <div class="header-main container d-flex a-flex-center jc-space-between">
+            <a href="#" class="header-logo add-pad-min-left">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="182" height="83" viewBox="0 0 182 83">
+                    <image id="Слой_1" data-name="Слой 1" width="182" height="83" xlink:href="data:img/png;base64,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"></image>
+                </svg>
+            </a>
+            <div class="contacts">
+                <button>Заказать обратный звонок</button>
+                <a href="tel:+380445011441">+38 (044) 501 14 41</a>
+                <a href="tel:+380577840700">+38 (044) 784 07 00</a>
+            </div>
+        </div>
+    </header>
+    <nav class="header-nav bg-gray">
+        <button class="burger-nav js-toggle" data-body-class="open-navigation" aria-label="Open Navigation Menu">
+            <span class="burger-item"></span>
+        </button>
+        <ul class="container nav-list d-flex a-flex-center jc-space-between">
+            <li class="nav-item">
+                <a class="nav-item-link" href="#">
+                    <svg class="nav-item-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="31" viewBox="0 0 38 31">
+                        <image id="_8_1" data-name="8_1" width="38" height="31" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAfCAYAAACLSL/LAAACbUlEQVRYhdWYu2sUURTGf24CJmxc3WAQYRVXDGqxQRBrLVKIjyoQtBBLQTv/gwjRYGFjUJJUFsEulQaxUUgRIQhimojiM2BAxVHji4DKwW9FL3d2Z2fmin6wzdx7vvPbO/dx7qwimzYBu4EKUJbTW2ARuAu8SOueBmwjcAI4CmwB5oFHwHu1l4BtQA14ClwFxoCXGQchVh3AMPARmAIOA50N+neqz5RihuWRq7ZqZGaBvhTGNcXOyysX2WtZAi4AbRkM2+SxJM9MsvnyEDiX4/CflWcpi8ll4GbKRRIn87oh71SyufAFqOYIVVdV3rHzrdGcOQ28ASYCgEVaRLYP3mo12FbRkQBQdZn3nTSB74CdQZB+aodytKx1QCEgWEE5vGp3HtoRsx/oAR4D19L+qwRaAxzUQnillfrMRz8CfBLMuOaYHciDAaAG5T2rXNeVe8R9S0Pa9HodA/tHH4D+HKH65XnIed4rhqH6g/XAZ51nPp0C5nIEm5OnTzWxGBMDTRJ3Ad+B7hyguuXV1QR8wN5nEXjdoOOyFkCms00qyWu5QR/b1IsGtgDsAVZnz5tZHWJZKGjorNI88w+A2cR/YkzteufHgNvaxy6p8XlM8PYmlatPNqEfxLRt1l52EtgH7BXTL20ARnWRiJzg+7pwmGbU3spvRrEVef2uSDkviiFWuzxgIRUp5x8KeRZm0n8FtgJ8+8scK0k62Yb7NVBJ7aqqXMWkAZO6hJQT9E2rsnJM+uLjbj9rgSuqABYDgVVUYh331XzNrmWRIF3Zd4gDCQGm9b3DlcEkrmBdWeHm+95gwPcSgp2PAbDrm1/AD0nwhbSdKWqTAAAAAElFTkSuQmCC"></image>
+                    </svg>
+                    <span class="nav-item-text">Мебель</span>
+                </a>
+            </li>
+            <li class="nav-item nav-item--active">
+                <a class="nav-item-link" href="#">
+                    <svg class="nav-item-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="37" viewBox="0 0 27 37">
+                        <image id="_1_1" data-name="1_1" width="27" height="37" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAlCAYAAACzpJKIAAABsUlEQVRIie3Xz4tNcRjH8dcwykSJjBrKhq3VbKzIZhZSFtQsJEJWdv4CS0VkQUoSK2RBYkWW0zQJIwtRwoKN/JjkV9FTz9Xpq3Pv1blzF9zP5tznOZ/zfZ/vued8n+8z9G58QkVj2IKVeIW7+KB7jWIXzuBredWCPC7CcbzEMezB+YwP1aAeYWORW4MTGCnyO3FrOIOLOaPtuI2feQP7cBJLcLQYYC0WdznnpVgdsK3YgXHMVgzfcRbvcQmX8eIvHukfise4G1cKUFUBeYrJJiAJW4+pDr6p9DWGxX8z18E3l77GsL5pAOuJhhsOsrCIH2CoztdkZrO5uox28MUncyT8TWDb8DkX6zpggO7hPvY3gUU1mGgDrIJiIf7W9AVpAaOcnCvOXcPDFkiP3sYA3sSyIh/x1RaoV7Cu9e/C4qM+gNf9gMXMZvCmkotyf2G+YKVW5IanL7B50wA2gA1g/xFspOZ3T2HP8QV7M16VbdXjNuN8TF9L0Rcsz3xb2Cccxmk8wTO8zV6tTtexLrvOTVk1fuBO9YKyp65qAzZn+blR3UvUKGZ/KqGx0TmI6d9e/AInNFGStcxEIgAAAABJRU5ErkJggg=="></image>
+                    </svg>
+                    <span class="nav-item-text">Кухня</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item-link" href="#">
+                    <svg class="nav-item-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="42" viewBox="0 0 42 42">
+                        <image id="_2_1" data-name="2_1" width="42" height="42" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAACeklEQVRYhe2YMUhVURjHf2aKviExSERcBIUmhwYXpygIhEJwc1JoeIPg4OTybAjBIRAXHdyCxMElGlpsaBFyUGhxKFBwSN6SSSFiGQf+0k3uOfe8e8+73uL94AM53znf9/fce77z3UcdaJIVnheyQjMLXMhmiyr0qQQ+l11orFCMAT+B5YioZY2NFUXoA+AMWAeaI+PNGjvTnGtlCDgB3gKtMUJa5TvR3GvhLlAFtoCSQ0BJc6pakyu9wCHwEej0SNypuYdamwt3gD3gM9BTQ8IerdlTjLpyC9gGvgD9KRL1a+22YtUFczA2gWNg0JGgRWZjUDE2LQcwE6bUbAA/gGFLoEc6NL9kWxqLY1ixNq6UtEyYBmNV9XDEEmhSN5Gpm09k6xqbtKwZUczVUE3MgnZo3OLvBr4D8zG+efm6LWvHFXshq8gZ7cqUY04Z+Aa0x/ja5Ss71k8px0xakZePcy5hntm1XYd/17LbUeYSXhMro2ooljzmTmvX2mJ8bfJNe8RZUs5RX5H3gVPgpedL3gecO97Rc81Jokk5T6XByT3VuDcJtfAqFT26NeCxbE1jlRritCj3sbTEMqDG4X1Ck2HDHJijSId/lHCIbJSkoSpNf2EahQO9+B0pgl9yQ8EH9HdaOqTlINrEmJthB/gEdGUIHpouadqJ3l4PPV/4vOmTNieLOXflQ8pZM+ZATHgsMqd6P8F8Tv6EcsZyM/X//4fbKuwrFn9ZczIRQihqhp9ZfN43jYssJSRXGkJD0xAamobQ0PwzQkMU/FfAO4e/ogshEyGEfkjwvw6Q4/959Oa75WtOWqzfSCR8ZVpbrjoTq8m1oz4/0OYD8BsgO4cxSwue5wAAAABJRU5ErkJggg=="></image>
+                    </svg>
+                    <span class="nav-item-text">Все для дома</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item-link" href="#">
+                    <svg class="nav-item-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="41" viewBox="0 0 25 41">
+                        <image id="_5_1" data-name="5_1" width="25" height="41" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAApCAYAAADAk4LOAAACfklEQVRYhdWXu2tUURDGf/vQXQQRIsT3JkiiEuOCwQcoYiOsAVEkYGOjsdEuhcTCJr1o7V8gQRuLCBoLEcRKBN+NxRpdFVFBCYmskpUJ34bL4a733AcEP7jcuztzvjlzZuacOTn8sAqoAr1AGfgF1IHnwJwnRyjywAhwF2gCLT1zge+m5CPSj4V9wDMRTQOjwDagKJKifo9K3pL+fl8j54HfwGNgyHPMkPRt3IUo5THN6gpQiOl9QeNa4glFTQoTHeQrgR0exibEU3MFq4EGcBtwM249cB34qYyKQk48DfEu4TIwC2xwCA4BX4FPwCVgp4cRxDMr3kVY6n0ErjmK24EfStE1nuRBXBXvYmof1BpWHaUHwAsVYhJUxWv8jAOfHZJBKQwnNNCG8Y6bK33AK0d4RIG+l9KI8fabkbUKbhC3VPULKY0Yb1dR+0/ZETZSkrdRAubzWrfNGZG62GT8eWXQrhBv0qIsXuOnokw6kbGR4+KttP94CNzP2Mi0eJcwLKtHMzJQ61RnU8AHoDulgW7xTIUJ1wEzwJPACRgXOR1eM+ILxW4V4JmERk5qmfZGKU4CbxN4Y+XwGrjpozyQ0JvTGjfgOyCuN0XpT8aZVT/wJ4Y356TfFybs1JF8B74Aj0J26DBYR/lGBfj/oitq5lENt6XlRqDHeXq18fWoByjpXApFVPbYdv1e3wtqjeqq6Kd611WAqWC911ZgxXIEtKATNbKTj4qJzf5wIBaVQDy2BJbb4jKf1EhJNdDU+r/7x5Oqs+n2mMzyw/eiM6h6Cbaze3Q1+JaVFxcV2GNaulPaEM9muUx2y7qjorMA2/uGb6ziBvSAbr0v1QtEA/gLptWQEzYQtUsAAAAASUVORK5CYII="></image>
+                    </svg>
+                    <span class="nav-item-text">Освищение</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item-link" href="#">
+                    <svg class="nav-item-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="36" viewBox="0 0 37 36">
+                        <image id="_6_1" data-name="6_1" width="37" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAkCAYAAAAOwvOmAAACzUlEQVRYhc2YTYhOURzGf+7MMAyNRqMweCnEiIhIaJoNko+MUjNKYiMWUyzksxSxYmHpIxtNIlZCFkiJfMyCWfjYMAtEyMfkY4z+eq6ud+beufeeO+87z+btveec5zz3/M95/v9zSYmJQGPE0MFAEzA27QRxMQxoBh4BXUA7UBkydjLwXv3uA1skNDOUATuAD8Bb4CBQG4PcA+YCx4CPwDtgG1DqKmw60CrS7UB5Sp4KYA/wFbgHTEoraI1IrgBj0pLkwfbYTb3k0qSDbZN2AkcUhixRqpD+ADbH5bU3+AXsSiCkShNVJRizG/gNrO6tY04b+ngCcn9cl36T4ATwWRbTIwYA14EHwMACiSqXxdzQ/N2wVmGbkZDYRZRhtsLYkN9gKp8AJ1OQuooynJLJ/od6kab1D1dR0zS+jsBxb1Jcn6UkdUUbcEtb6J+o5cClIgnycQFY6f/xl36mA6Fr+AxzxFHjKbl2agmLiVadwlpPee018LPIosyO3gCjTdQQuXgWqHHksNKo0lPokjp4Pl4BZ4GLwCwHHkvWHZ5WKayCjAt7sfXAeVnLvJQ8I1UMslC73lUYygxHgW8y5CSokA6rVhmuXV+XgSgfhy0MQd+JgcXAd2CQ39Uqg0MZijLsVCG3Lmb//cCd4IN9wIuw8sEBzTrqG2NwPAb2Bh/kFMJlGYtC1ys7CFsj+ixSn/H5DS3A3T5YLZTwLeGWhLRfBc711DBFG21TH4gi4gKyQiGeGjbwAPBJN9xCYRywIWouc9TbSs7VBRTWK8xVn8sm+pWwnKrQpypV+w2qdcX+og8TWdyU67P4wFGim2yHirCGlKSWQq7plGWWziYAp5U22pV0l0QkcavRFih1tMkYW6KOfRBJjXKUSpRVwHytpFWLVrmalZjIEVY9alUeApeBM8DLuJO4uPdQvbndFe3Dxt8CTfWZCbDruJlxMgB/AMXCkRcnytJqAAAAAElFTkSuQmCC"></image>
+                    </svg>
+                    <span class="nav-item-text">Часы и декор</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item-link" href="#">
+                    <svg class="nav-item-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="36" viewBox="0 0 35 36">
+                        <image id="_7_1" data-name="7_1" width="35" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAkCAYAAAAD3IPhAAADBElEQVRYhcWXWYiNYRjHf+OMY5sau0yWYpCtkZvRWAYpkiEXlsm4UEpuRCRzMTekcIMSkSLlgggXthlFypo0Y4owM8xQlsJYx05P/U99vs63OjPnX1/nO+/yPP/3Wd+PdkTf9hQeBTOBj8CybBOZCnwBbgK/skmoGHgP7ANygE3ZIjQYeAMcEpEUskLoFHAH6JxmrkMJjQL+ANN81nQYoY3AoxDrMk5oOFDlGjsGHAi5PyOEegM7ge/ALaCnY+4ysDmCrNiEksB64B3wBFjqyhbDOWBHRLmRCJnCxUAT0ApsALp4rN0DXIhIJjShycANuWQ30CdAaBnw1eW6/yZkwXlCaXoSGBFSoLnyBbA9Bpn5wE9gq3vCCDwApsQQWgH8AEojEjHrb0s3aVlSGYNICvvVrctCrF3lR8TwUieMixy5ytx8BpgOJByyugLzgKuy4hovPUkJiWJmL5ibLykw7TrxEGgAvumxPjbOvddZL4YBjQriJh9FRUA5MEAt4LCCNx3stlcCFAC/gRbgOvAh6DSlsoxZyAvrJNQEHgEeqwZlwpr/oEIx44VikV3hGMsFDgKvgbxMkqlUNnlhL1CdZrybbndLAuTPCCLcyfE+BHjus3YgcD/NeJt6VoHP3l5qF7OikGnxWdsgV7lhLWCkCHmhXEF71o+ME3Xqzl4Yo5ipchwiT/WkSTXEC7eBXWGJoCvCIo85K1xHdTpzSzNwRXvMmuNDHGJCWCI9tGFSmrmkTv9WbuoPrAa2AMuB7gGy7Z5TG5aIYbTIuIPQFNUArwJO74WECuLaKJtmq1c4AzofuKYMK4xBxDBXcvtF2bQSeOr4b5vvKoMGxSRiOA6cDrs4V7/2NfhM76a8Wk2uRNU1CAl9OxW5HqtNC+OSKVRxss/UOcoWN/JdCi1Lxiq1W1Ui6mSVe1GCN9W1a5SyE9WJFwCf1Mndiocq2BsdimuluDms4iDLmJk/q26cl/I8jdVL4UX91otsRpGyTJvM3OIwberUZgG7NnQILPjsemjNLHsA/gLPc71sqjAwoAAAAABJRU5ErkJggg=="></image>
+                    </svg>
+                    <span class="nav-item-text">Деловой стиль</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item-link" href="#">
+                    <svg class="nav-item-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39" height="28" viewBox="0 0 39 28">
+                        <image id="_4_1" data-name="4_1" width="39" height="28" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAcCAYAAADiHqZbAAAC2UlEQVRYhd2XX2hOcRjHP3iZhI1hyzLvolDU2Py9kJDtZv5cuLBCIQlNcUG74IJcaArJhX9td2huXZEoRFygXDAsNIzWNMy/mZ71ffn5dc5533f27i3fOhfnOc95zvf5/ztkGXEgJ9skXFQC9UAz0A0sDVOMZYHcfGA60AhcBm5mgcN/jkH/6F6R0jQTeJSC/nZgMvAwE2GdBZwCbgDtKujuFImh+qpP9WPpNsRooFSeXxQpu14keWcdsBmYBnSk+c2MYIGi9Bn47kTZ7odmg9BIYCvwQESeALuAQ0AXsE3yxf1Jqgw4A3wCvgEXgCXAAKBckTsg3RbgYH+QWg7cUzSeAbVAgfN8ONCkRkjUdwNwN5OkhgBHROoSUAEMDNCzmvsAlDiytcBPNUqfw5b1HaAT2BRhfI3IV3vyAslXp0vMhvJG4HrIgK4C2lToMyLslChiDSHPrWFOerJY1FIYC1xTyBtVLwkMBurk8TlgRASxmGqsybPh4jDw3JNtUVBGBRm0qf9G68hFMXAL+CIDybBf3VkeoVMhRyc5snlAq3j8tRxqgB8aCS4SaXwa8CwICzXPdifRGxbibJkcq3GFj7UzE3DTaCnOTYGYdd9LndH8zq3TXnZxRSvQx2nVdA+KRGKZo7RCEdgL5KV4mRPvgfHex3Jka70n36Os+I5Uio/x6lnkdjPFUVjp7MJ0rqqASBTr/UWe3BpwQoD+VOmXxrRyDPmOwm1gVcCLUehQqny06z7Pk78LsZXg8RGFtU0pzBSshk6kaHuf+PyeeceAt8CYDJGrVSTiSfTyFdGjrrBAM+5qRGeaznHVSrpIHADuA+NC3s3VEmgNCtJcdZv9T24ACpVy83anXmrRb11vYKfgV7KzA5goG4U6JTcrnXPCbMc1Erq8Du3ULuxN1FxY1M4CXz37tgDO+91rh8EgGInZGqyv1b093dNHsM619WZRs2zZKcei9gfAL153s5spaVlFAAAAAElFTkSuQmCC"></image>
+                    </svg>
+                    <span class="nav-item-text">Активный отдых</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item-link" href="#">
+                    <svg class="nav-item-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+                        <image id="_10_1" data-name="10_1" width="38" height="38" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAEG0lEQVRYhc2YeYhVZRjGf0412ViZTRqFrTiGLRBTEi0YlbZCkIQRFYVFBoVFWRFJRGWNtkirSmabFtNmG2UEGoGVFbQXiQW2ETVUppnl6I0XfjcOp3Pu/e7UvfbA/eOc8y3P9y7P+36XFmIMMA14HBjWyo3zGAycCNwFfAlUgM3AWmD7VpMZCVwIPAf8Jpn3gRuBw4APgbtbQaQNOBy4SQJB5HfgBWCKRKs4Rot1NZtUbPq9ZL4G5gCnANuVjH8eeKnZpAK3SershLGjtdbxzSa1E/ArsNjgrod7gM+AQc0mdhXQBwwxttprjA1pWAesBCYalwPGDjUmBonvzLTADDcsw9XAD8BcEyMsN7nOYQqxLfAHsBw4reCE5wMbgF197lIeirA18A1wvd92A2ZpwUiYyxvVtI+dXNEFF5ltESOfAvNz45dmiGZxpocYkXs/TLIRDj9p1SRExr0JHAI8BvQDPwILJXtAbpHJnj6Pd4AFJRseBTwJrHLN3VOIHQtsAjp93gu43XIScXINsHNmfMTkG7k1jnTDgzLvRlgv3wbmAWMNlT4PVxftkjgjN3AocKVxEyXn3oySPwQcCowCjlP9XwW2Ak4Gntbl55nNWTwCPJVCLPCsmxWhXWH9QOGMsdOtBJ8Avbo+rPgucCuwX429IhZ/MVnqYoob1RPF8cAS3fZoJovD1Z8bFvXQaeiMSyG2p5t1pwwGvi2wylTgjsT5IU+3VB9qqfBXuuWExIU3qoFZNCKiLwMnpQ4O2Xg9cex9Ll7tLvYxSf4EHsxlZxG6G5WNfot2EcJCk4yxaGlWm/rLjc8vTJIVbvoKMKEkbgc5pyHZyNfCA4HZZtx1wB72ZxvtYMcqCdFAnuqcENRnzOLoZM8tcPWCRmVjviIadfI15WBCLkZn2ttn33XZGmWxr7pVsRnIivXpjcrGWs0cZWeXgjFDrHlTC74tK6iVM4y/WRJZZ8/WbegkyUZU/4c94SqtlnfBxW5Q1ClckKuj1UNM8zk8cYUqsFliN6cQGw58pJIvcmIschnQoetWmsFF2NHgr+ISD5Hv+cJ9ZwHv1Sj8f6NTUmsMaIyRucpAn/HSb6Evw0LraJtWn5likTIM9aRrvBNmMcoY6dX8vXXWGm/Bn+iBkrSqCCmkeuwaKt4ta6HNgv8W8EAzSd3p8xIbypQ1F3uI/f8NqfXAESWk5qjSY9xoUslao83GZQrvhsSr3j/QYV1cX9Cq5ElhbVydEcNtnDfbLK04Z57q3zFQUksbIFW9K/ZYWp7Q9ZtsDq8FDh4IkSwG1yC1t6TuzxXeS7VI/H72P69zSqrCgDHdGMiTGqnmLLJvz+JoL7zjCr79Z3jRi0IqqZahR3cN/z+Rwpq1wky6wUzb4qSqiEIblou7YFT9LUsK+AsjFBC08jSVHQAAAABJRU5ErkJggg=="></image>
+                    </svg>
+                    <span class="nav-item-text">Детский мир</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="header-helper-nav add-pad-min-left">
+            <ul class="nav-list-route d-flex">
+                <li class="nav-route">
+                    <a href="#">
+                        Главная
+                    </a>
+                    <svg class="nav-route-icon" xmlns="http://www.w3.org/2000/svg" width="15px" viewBox="0 0 15 5" style="fill:#666;isolation:isolate;">
+                        <g>
+                            <polygon points="14.31 2.24 11 0 11 2 0 2 0 3 11 3 11 5 14.31 2.76 15 3.33 15 2.71 15 2.29 15 1.67 14.31 2.24"></polygon>
+                        </g>
+                    </svg>
+                </li>
+                <li class="nav-route">
+                    <a href="#">
+                        Каталог
+                    </a>
+                    <svg class="nav-route-icon" xmlns="http://www.w3.org/2000/svg" width="15px" viewBox="0 0 15 5" style="fill:#666;isolation:isolate;">
+                        <g>
+                            <polygon points="14.31 2.24 11 0 11 2 0 2 0 3 11 3 11 5 14.31 2.76 15 3.33 15 2.71 15 2.29 15 1.67 14.31 2.24"></polygon>
+                        </g>
+                    </svg>
+                </li>
+                <li class="nav-route">
+                    <a href="#">
+                        Кухня
+                    </a>
+                    <svg class="nav-route-icon" xmlns="http://www.w3.org/2000/svg" width="15px" viewBox="0 0 15 5" style="fill:#666;isolation:isolate;">
+                        <g>
+                            <polygon points="14.31 2.24 11 0 11 2 0 2 0 3 11 3 11 5 14.31 2.76 15 3.33 15 2.71 15 2.29 15 1.67 14.31 2.24"></polygon>
+                        </g>
+                    </svg>
+                </li>
+                <li class="nav-route">
+                    <a href="#">
+                        Кухонные аксессуары
+                    </a>
+                    <svg class="nav-route-icon" xmlns="http://www.w3.org/2000/svg" width="15px" viewBox="0 0 15 5" style="fill:#666;isolation:isolate;">
+                        <g>
+                            <polygon points="14.31 2.24 11 0 11 2 0 2 0 3 11 3 11 5 14.31 2.76 15 3.33 15 2.71 15 2.29 15 1.67 14.31 2.24"></polygon>
+                        </g>
+                    </svg>
+                </li>
+                <li class="nav-route nav-route--active">
+                    <a href="#">
+                        Термокружки, термосы
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <main class="main container d-flex">
+        <article class="product">
+            <div class="add-pad-min-left">
+                <h1 class="product-title">
+                    Книжный шкаф Calligaris Lib, Double-sided tall bookcase,
+                    Finish glossy white and Glass smoked grey
+                </h1>
+                <span class="product-id">PN: AE113AWBPJG1C7BK3D01</span>
+            </div>
+            <div class="product-meta">
+                <div class="price-container d-flex jc-space-between add-pad-min-left">
+                    <div class="price-content">
+                        <span class="price">946 470, <span class="currency">UAH</span></span>
+                    </div>
+                    <button class="buy-btn btn d-flex">
+                        <span class="buy-btn-text">Купить</span>
+                        <span class="arrow-down"></span>
+                    </button>
+                </div>
+                <div class="gallery-container">
+                    <div class="swiper-container gallery-main">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./base_item.5a9c49e5.jpg" alt="Шкаф">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./base_item.5a9c49e5.jpg" alt="Шкаф">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./base_item.5a9c49e5.jpg" alt="Шкаф">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./base_item.5a9c49e5.jpg" alt="Шкаф">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./base_item.5a9c49e5.jpg" alt="Шкаф">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./base_item.5a9c49e5.jpg" alt="Шкаф">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./base_item.5a9c49e5.jpg" alt="Шкаф">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="secondary-slider">
+                        <div class="swiper-container gallery-thumbs">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./Layer50.611d1872.png" alt="Шкаф">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./Layer50copy.95cd3acc.jpg" alt="Шкаф">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./Layer51.6ba246f4.png" alt="Шкаф">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./Layer51copy.d2f3da5e.png" alt="Шкаф">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./Layer52.6b805f14.png" alt="Шкаф">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./Layer53.c1f397bd.png" alt="Шкаф">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./Layer54.93a71716.png" alt="Шкаф">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="tab d-flex a-flex-center">
+                    <h3 class="tab-item js-tab-title js-tab-is-active" data-tab-content-id="description">
+                        Описание
+                    </h3>
+                    <h3 class="tab-item js-tab-title" data-tab-content-id="guarantee">
+                        Гарантия
+                    </h3>
+                    <h3 class="tab-item js-tab-title" data-tab-content-id="designer">
+                        Дизайнер
+                    </h3>
+                    <h3 class="tab-item js-tab-title" data-tab-content-id="brend">
+                        Бренд
+                    </h3>
+                </div>
+                <div class="tab-content">
+                    <div class="content-pane js-tab-is-active" id="description">
+                        <p>
+                            Одна линия, много возможностей. Cерия Lirio Nick-Knack от Philips, новый торшер, который
+                            вдохновляет, идея светильника начинается с прямой линии, Lirio Nick-Knack могут быть
+                            скручены в 16 различных положениях. Доступные напольные светильники Lirio Nick-Knack
+                            выполнены в 5 ярких цветах (красный, жёлтый, синий, белый, чёрный), это игривые торшеры
+                            приносят эффект прямого и отраженного освещения, с дизайнерскими светильниками Lirio
+                            Nick-Knack вы можете читать книгу или просто создать приятную атмосферу в вашем доме.
+                            Сочетая элегантный дизайн с LED лампой, Lirio Nick-Knack является одной из первых линий
+                            большой истории вашего дома.
+                        </p>
+                    </div>
+                    <div class="content-pane" id="guarantee">
+                        <p>
+                            Одна линия, много возможностей. Cерия Lirio Nick-Knack от Philips, новый торшер, который
+                            вдохновляет, идея светильника начинается с прямой линии, Lirio Nick-Knack могут быть
+                        </p>
+                    </div>
+                    <div class="content-pane" id="designer">
+                        <p>
+                            Nick-Knack вы можете читать книгу или просто создать приятную атмосферу в вашем доме.
+                            Сочетая элегантный дизайн с LED лампой, Lirio Nick-Knack является одной из первых линий
+                            большой истории вашего дома.
+                        </p>
+                    </div>
+                    <div class="content-pane" id="brend">
+                        <p>
+                            Одна линия, много возможностей. Cерия Lirio Nick-Knack от Philips, новый торшер, который
+                            приносят эффект прямого и отраженного освещения, с дизайнерскими светильниками Lirio
+                            Nick-Knack вы можете читать книгу или просто создать приятную атмосферу в вашем доме.
+                            Сочетая элегантный дизайн с LED лампой, Lirio Nick-Knack является одной из первых линий
+                            большой истории вашего дома.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </article>
+        <aside class="sidebar-box">
+            <a href="#" class="sidebar-btn btn-outline">Перейти в каталог</a>
+            <div class="sidebar-col">
+                <button class="sidebar-toggle d-flex a-flex-center js-toggle" data-body-class="sidebar-show">
+                    Кухня
+                    <span class="arrow-down"></span>
+                </button>
+                <ul class="sidebar-list">
+                    <li><a href="#">Техника для кухни</a></li>
+                    <li><a href="#">Кухонные аксессуары</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./main.1f19ae8e.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+.product-info {
+    margin-top: 13.7rem;
+    max-width: 840px;
+}
+  
+.tab {
+    position: relative;
+    justify-content: space-around;
+    padding-left: 10px;
+    width: 100%;
+
+    &-item {
+        width: 25%;
+        text-align: center;
+        padding: 10px 0;
+    
+        font-size: 1.8rem;
+        font-weight: 400;
+    
+        border-bottom: 2px solid #cccccc;
+        cursor: pointer;
+    
+        &:hover {
+            background-color: rgba(194, 53, 100, 0.05);
+            border-color: rgba(194, 53, 100, 0.1);
+        }
+    }
+
+    .js-tab-is-active {
+        color: red;
+        border-color: red;
+    }
+
+    &-content {
+        margin-top: 3.5rem;
+
+        .js-tab-is-active {
+            display: block;
+        }
+    }
+}
+
+.content-pane {
+    display: none;
+  
+    p {
+        line-height: 1.8;
+        padding: 0 13px;
+    }
+}
+  
+@include laptop {
+    .product-info {
+        margin-top: 3.7rem;
+    }
+}
+  
+@include mobile {
+    .tab {
+        flex-direction: column;
+        width: 100%;
+
+        &-item {
+            padding-bottom: 20px;
+            width: 100%;
+        }
+    }
+}
+  
