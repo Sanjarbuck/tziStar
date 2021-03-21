@@ -1,0 +1,55 @@
+@import "./abstract/vars.scss";
+@import "./abstract/mixin.scss";
+
+@import "normalize.css";
+@import "./base/layout.scss";
+@import "./base/utility.scss";
+@import "./base/buttons.scss";
+@import "./partials/header.scss";
+@import "./partials/navigation.scss";
+@import "./partials/slider.scss";
+@import "./partials/product.scss";
+@import "./partials/product-tab.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+
+    &:focus-visible {
+        border: 1px solid #cccccc;
+    }
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  color: $main-color-text;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: $gray;
+}
+
+ul {
+  list-style: none;
+}
